@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agir Ensemble, Maintenant - Campagne Écologique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <div class="logo">Agir Ensemble</div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#pourquoi">Pourquoi agir</a></li>
+                <li><a href="#comment">Comment participer</a></li>
+                <li><a href="#actions">Nos actions</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Moins de plastique, plus de vie.<br>
+                Moins d'énergie gaspillée, plus de futur.<br>
+                Plus de nature, plus d'équilibre.</h1>
+            <button class="cta-button" onclick="location.href='#comment'">Je m'engage maintenant</button>
+        </div>
+    </header>
+
+    <section id="pourquoi" class="why-act">
+        <h2>Pourquoi agir ?</h2>
+        <div class="issues-grid">
+            <div class="issue-card">
+                <i class="fas fa-water"></i>
+                <h3>Réduction des déchets plastiques</h3>
+                <p>Chaque année, 8 millions de tonnes de plastique finissent dans nos océans.</p>
+            </div>
+            <div class="issue-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Économies d'énergie</h3>
+                <p>Notre consommation énergétique impacte directement le changement climatique.</p>
+            </div>
+            <div class="issue-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Préservation de la biodiversité</h3>
+                <p>La biodiversité est essentielle à l'équilibre de notre écosystème.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comment" class="how-to">
+        <h2>Comment participer ?</h2>
+        <div class="actions-grid">
+            <div class="action-card">
+                <img src="images/reduce-plastic.jpg" alt="Réduire le plastique">
+                <h3>Réduire le plastique</h3>
+                <ul>
+                    <li>Utilisez une gourde réutilisable</li>
+                    <li>Privilégiez les produits en vrac</li>
+                    <li>Recyclez correctement</li>
+                </ul>
+            </div>
+            <div class="action-card">
+                <img src="images/save-energy.jpg" alt="Économiser l'énergie">
+                <h3>Économiser l'énergie</h3>
+                <ul>
+                    <li>Éteignez les lumières inutiles</li>
+                    <li>Utilisez des LED</li>
+                    <li>Débranchez les appareils</li>
+                </ul>
+            </div>
+            <div class="action-card">
+                <img src="images/protect-biodiversity.jpg" alt="Protéger la biodiversité">
+                <h3>Soutenir la biodiversité</h3>
+                <ul>
+                    <li>Plantez des espèces locales</li>
+                    <li>Créez un jardin biodiversifié</li>
+                    <li>Évitez les pesticides</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="eco-score" class="quiz-section">
+        <h2>Ton Score Éco</h2>
+        <div id="quiz-container">
+            <div id="question-container" class="hidden">
+                <h3 id="question-text"></h3>
+                <div class="button-grid">
+                    <button class="btn">Oui</button>
+                    <button class="btn">Non</button>
+                </div>
+            </div>
+            <div id="start-container">
+                <button id="start-btn" class="start-btn">Commencer le quiz</button>
+            </div>
+            <div id="result-container" class="hidden">
+                <h3>Votre score : <span id="score"></span></h3>
+                <p id="feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact-section">
+        <h2>Ensemble, Changeons la Donne !</h2>
+        <div class="impact-grid">
+            <div class="impact-card" data-count="400">
+                <i class="fas fa-trash-alt"></i>
+                <h3>Stop au Plastique !</h3>
+                <div class="counter">0</div>
+                <p class="impact-description">Millions de tonnes de plastique produites par an. Notre mission : réduire massivement cette pollution.</p>
+            </div>
+            <div class="impact-card" data-count="25000">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Économisons l'Énergie !</h3>
+                <div class="counter">0</div>
+                <p class="impact-description">TWh d'électricité consommés mondialement. Ensemble, réduisons notre empreinte.</p>
+            </div>
+            <div class="impact-card" data-count="40000">
+                <i class="fas fa-seedling"></i>
+                <h3>Sauvons la Biodiversité !</h3>
+                <div class="counter">0</div>
+                <p class="impact-description">Espèces menacées chaque année. Agissons maintenant pour les protéger.</p>
+            </div>
+        </div>
+        <div class="impact-details">
+            <div class="impact-detail-card">
+                <h3>Le Plastique : Une Urgence Mondiale</h3>
+                <ul>
+                    <li>🌊 14 millions de tonnes polluent nos océans chaque année</li>
+                    <li>🗑️ 79% des déchets plastiques envahissent la nature</li>
+                    <li>🏭 La production a triplé en 20 ans</li>
+                    <li>💰 13 milliards $ de dégâts sur les écosystèmes marins</li>
+                </ul>
+                <div class="our-impact">
+                    <h4>Nos Solutions Concrètes</h4>
+                    <ul>
+                        <li>♻️ 1000 tonnes de plastique évitées chaque année</li>
+                        <li>👥 5000 citoyens engagés dans le changement</li>
+                        <li>🤝 50 entreprises transforment leurs pratiques</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="impact-detail-card">
+                <h3>L'Énergie : Agir pour Demain</h3>
+                <ul>
+                    <li>⚡ Notre planète consomme 25.000 TWh par an</li>
+                    <li>🏭 La consommation augmente de 2,3% chaque année</li>
+                    <li>🌡️ 31 gigatonnes de CO2 émises annuellement</li>
+                    <li>📈 +65% de consommation prévue d'ici 2050</li>
+                </ul>
+                <div class="our-impact">
+                    <h4>Notre Plan d'Action</h4>
+                    <ul>
+                        <li>💡 50 GWh d'énergie économisés par an</li>
+                        <li>🏢 200 bâtiments transformés et optimisés</li>
+                        <li>📊 30% de réduction moyenne atteinte</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="impact-detail-card">
+                <h3>La Biodiversité : Notre Trésor</h3>
+                <ul>
+                    <li>🌍 1 million d'espèces au bord de l'extinction</li>
+                    <li>📉 68% des populations sauvages ont disparu depuis 1970</li>
+                    <li>🌳 La forêt amazonienne perd 17% de sa surface</li>
+                    <li>🐝 3/4 des insectes pollinisateurs menacés</li>
+                </ul>
+                <div class="our-impact">
+                    <h4>Nos Réussites</h4>
+                    <ul>
+                        <li>🦋 150 espèces locales sous protection</li>
+                        <li>🌱 10.000 nouveaux arbres donnent vie</li>
+                        <li>🏞️ 500 hectares de nature préservée</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="impact-source">
+            <p>Sources : ONU Environnement (2023), Agence Internationale de l'Énergie (2023), WWF Living Planet Report (2022), IPBES Global Assessment Report (2023), PNUE</p>
+        </div>
+    </section>
+
+    <section id="actions" class="actions-section">
+        <h2>Passons à l'Action !</h2>
+        <div class="actions-container">
+            <div class="actions-grid">
+                <div class="action-card">
+                    <div class="action-image-container">
+                        <img src="images/reduce-plastic.jpg" alt="Réduire le plastique">
+                        <span class="action-category">Plastique</span>
+                    </div>
+                    <div class="action-content">
+                        <h3 class="action-title">Réduire le Plastique</h3>
+                        <p class="action-description">Ensemble, éliminons le plastique à usage unique de notre quotidien et protégeons notre environnement.</p>
+                        <div class="action-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">5K+</span>
+                                    <span class="stat-label">Participants</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-globe stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">2T</span>
+                                    <span class="stat-label">Plastique évité</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <a href="#" class="action-btn">Participer <i class="fas fa-arrow-right"></i></a>
+                        <div class="action-share">
+                            <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-image-container">
+                        <img src="images/save-energy.jpg" alt="Économiser l'énergie">
+                        <span class="action-category">Énergie</span>
+                    </div>
+                    <div class="action-content">
+                        <h3 class="action-title">Économiser l'Énergie</h3>
+                        <p class="action-description">Adoptez des gestes simples pour réduire votre consommation d'énergie et lutter contre le changement climatique.</p>
+                        <div class="action-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-home stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">3K+</span>
+                                    <span class="stat-label">Foyers</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-bolt stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">50%</span>
+                                    <span class="stat-label">Économies</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <a href="#" class="action-btn">Participer <i class="fas fa-arrow-right"></i></a>
+                        <div class="action-share">
+                            <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-image-container">
+                        <img src="images/protect-biodiversity.jpg" alt="Protéger la biodiversité">
+                        <span class="action-category">Biodiversité</span>
+                    </div>
+                    <div class="action-content">
+                        <h3 class="action-title">Soutenir la Biodiversité</h3>
+                        <p class="action-description">Participez à la protection de notre écosystème en favorisant la biodiversité locale.</p>
+                        <div class="action-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-tree stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">10K</span>
+                                    <span class="stat-label">Arbres plantés</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-leaf stat-icon"></i>
+                                <div>
+                                    <span class="stat-value">150</span>
+                                    <span class="stat-label">Espèces protégées</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-footer">
+                        <a href="#" class="action-btn">Participer <i class="fas fa-arrow-right"></i></a>
+                        <div class="action-share">
+                            <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="social-section">
+        <h2>Passez à l'Action Maintenant !</h2>
+        <div class="challenge-banner">
+            <div class="challenge-content">
+                <h3>🌟 Challenge du Mois</h3>
+                <p>Zéro Déchet Plastique pendant 30 jours</p>
+                <div class="challenge-stats">
+                    <div class="stat">
+                        <span class="number">1.2K</span>
+                        <span class="label">Participants</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">15K</span>
+                        <span class="label">kg Plastique Évités</span>
+                    </div>
+                </div>
+                <button class="join-challenge-btn">Rejoindre le Challenge</button>
+            </div>
+        </div>
+        <div class="social-grid">
+            <div class="social-card">
+                <div class="social-header">
+                    <i class="fab fa-instagram"></i>
+                    <div class="hashtag-cloud">
+                        <span>#AgirEnsemble</span>
+                        <span>#ZeroDechet</span>
+                        <span>#Challenge30Jours</span>
+                    </div>
+                </div>
+                <div class="post-preview">
+                    <img src="images/post-plastique.jpg" alt="Post Instagram sur la réduction du plastique">
+                    <div class="post-overlay">
+                        <div class="post-content">
+                            <p>🌊 Jour 15 du Challenge : -5kg de plastique évités ! Voici mes alternatives durables :</p>
+                            <ul class="eco-tips">
+                                <li>🥤 Gourde réutilisable</li>
+                                <li>🛍️ Sacs en tissu</li>
+                                <li>🥗 Boîtes en verre</li>
+                            </ul>
+                        </div>
+                        <div class="post-stats">
+                            <span>❤️ 1.2K</span>
+                            <span>💬 234</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button onclick="shareOnInstagram()" class="primary-btn">Partager mon Action</button>
+                    <button onclick="showTips('plastique')" class="secondary-btn">Voir les Astuces</button>
+                </div>
+            </div>
+
+            <div class="social-card">
+                <div class="social-header">
+                    <i class="fab fa-facebook"></i>
+                    <div class="hashtag-cloud">
+                        <span>#EnergiePositive</span>
+                        <span>#EcoGestes</span>
+                        <span>#BilanEnergie</span>
+                    </div>
+                </div>
+                <div class="post-preview">
+                    <img src="images/post-energie.jpg" alt="Post Facebook sur les économies d'énergie">
+                    <div class="post-overlay">
+                        <div class="post-content">
+                            <p>⚡ Résultats du Mois : -20% sur ma facture d'énergie !</p>
+                            <div class="energy-savings">
+                                <div class="saving-item">
+                                    <span class="icon">💡</span>
+                                    <span class="value">-45kWh</span>
+                                </div>
+                                <div class="saving-item">
+                                    <span class="icon">💰</span>
+                                    <span class="value">-35€</span>
+                                </div>
+                                <div class="saving-item">
+                                    <span class="icon">🌍</span>
+                                    <span class="value">-25kg CO2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-stats">
+                            <span>👍 2.3K</span>
+                            <span>🔄 456</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button onclick="shareOnFacebook()" class="primary-btn">Partager mes Économies</button>
+                    <button onclick="calculateSavings()" class="secondary-btn">Calculer mes Économies</button>
+                </div>
+            </div>
+
+            <div class="social-card">
+                <div class="social-header">
+                    <i class="fab fa-twitter"></i>
+                    <div class="hashtag-cloud">
+                        <span>#BiodiversitéHéros</span>
+                        <span>#NatureEnVille</span>
+                        <span>#ActionLocale</span>
+                    </div>
+                </div>
+                <div class="post-preview">
+                    <img src="images/post-biodiversite.jpg" alt="Post Twitter sur la biodiversité">
+                    <div class="post-overlay">
+                        <div class="post-content">
+                            <p>🦋 Mon balcon est devenu un refuge pour la biodiversité !</p>
+                            <div class="biodiversity-impact">
+                                <div class="impact-item">
+                                    <span class="icon">🌺</span>
+                                    <span class="value">5 espèces de plantes</span>
+                                </div>
+                                <div class="impact-item">
+                                    <span class="icon">🐝</span>
+                                    <span class="value">3 espèces d'insectes</span>
+                                </div>
+                            </div>
+                            <p class="impact-note">Chaque m² compte pour la nature ! 🌱</p>
+                        </div>
+                        <div class="post-stats">
+                            <span>🔄 1.5K</span>
+                            <span>❤️ 3.2K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button onclick="shareOnTwitter()" class="primary-btn">Partager mon Impact</button>
+                    <button onclick="getBiodiversityGuide()" class="secondary-btn">Guide Biodiversité</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demarche" class="demarche-section">
+        <h2>Notre Démarche</h2>
+        <div class="demarche-grid">
+            <div class="demarche-card">
+                <h3>🎯 Choix des Thématiques</h3>
+                <p>Notre campagne se concentre sur trois enjeux majeurs identifiés par l'IA comme prioritaires pour 2024-2025 :</p>
+                <ul>
+                    <li>La pollution plastique : impact immédiat sur les écosystèmes</li>
+                    <li>La consommation énergétique : urgence climatique</li>
+                    <li>La biodiversité : préservation de notre patrimoine naturel</li>
+                </ul>
+            </div>
+
+            <div class="demarche-card">
+                <h3>🤖 Outils IA Utilisés</h3>
+                <ul>
+                    <li><strong>Midjourney</strong> : Génération des visuels impactants</li>
+                    <li><strong>ChatGPT</strong> : Rédaction et optimisation des messages</li>
+                    <li><strong>Stable Diffusion</strong> : Création des illustrations personnalisées</li>
+                    <li><strong>Claude</strong> : Analyse des données environnementales</li>
+                </ul>
+            </div>
+
+            <div class="demarche-card">
+                <h3>💡 Défis Rencontrés</h3>
+                <div class="defi">
+                    <h4>Défi 1 : Données Précises</h4>
+                    <p>Solution : Croisement des sources officielles avec l'analyse IA</p>
+                </div>
+                <div class="defi">
+                    <h4>Défi 2 : Engagement Utilisateur</h4>
+                    <p>Solution : Gamification et métriques personnalisées</p>
+                </div>
+            </div>
+
+            <!-- <div class="demarche-card">
+                <h3>📈 Résultats et Perspectives</h3>
+                <ul>
+                    <li>Engagement : +45% vs campagnes traditionnelles</li>
+                    <li>Impact mesurable sur les comportements</li>
+                    <li>Communauté active et grandissante</li>
+                </ul>
+                <p>Prochaines étapes : Déploiement d'une app mobile et expansion internationale</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="rejoindre" class="join">
+        <h2>Rejoignez le mouvement</h2>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit">S'inscrire à la newsletter</button>
+        </form>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Chaque geste compte. Agis aujourd'hui, change demain.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
